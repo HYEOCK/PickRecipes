@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_yellow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/AppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/loginame" />
+
+    <ImageButton
+        android:id="@+id/App_Button_G"
+        android:layout_width="186dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="LoginGoogle"
+        android:background="@drawable/ellipse_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AppName" />
+
+    <EditText
+        android:id="@+id/Logingoogle"
+        android:layout_width="116dp"
+        android:layout_height="84dp"
+        android:drawableBottom="@drawable/login_with_google"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/App_Button_G"
+        app:layout_constraintEnd_toEndOf="@+id/App_Button_G"
+        app:layout_constraintStart_toStartOf="@+id/App_Button_G"
+        app:layout_constraintTop_toTopOf="@+id/App_Button_G" />
+
+    <ImageButton
+        android:id="@+id/App_Button_FB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/App_Button_G"
+        app:layout_constraintTop_toBottomOf="@+id/AppName"
+        app:layout_constraintVertical_bias="0.14"
+        app:srcCompat="@drawable/circle_white" />
+
+    <EditText
+        android:id="@+id/Loginfacebook"
+        android:layout_width="96dp"
+        android:layout_height="67dp"
+        android:drawableBottom="@drawable/login_with_facebook"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/App_Button_FB"
+        app:layout_constraintEnd_toEndOf="@+id/App_Button_FB"
+        app:layout_constraintStart_toStartOf="@+id/App_Button_FB"
+        app:layout_constraintTop_toTopOf="@+id/App_Button_FB" />
+
+
+</android.support.constraint.ConstraintLayout>
+
