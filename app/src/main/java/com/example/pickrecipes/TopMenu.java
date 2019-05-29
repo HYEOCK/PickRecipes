@@ -80,15 +80,11 @@ public class TopMenu extends AppCompatActivity
 
         if (id == R.id.nav_home) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_MyPage) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_chinesefood) {
 
-        } else if (id == R.id.nav_tools) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_koreanfood) {
 
         }
 
