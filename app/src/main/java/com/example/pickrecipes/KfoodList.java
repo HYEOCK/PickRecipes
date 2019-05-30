@@ -11,6 +11,8 @@ import java.util.List;
 
 public class KfoodList extends AppCompatActivity {
 
+    List<CardList> cardLists;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,13 +24,13 @@ public class KfoodList extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         List<CardList> dataList =  new ArrayList<>();
-        dataList.add(new CardList("[Soup]", "Korean Kimchi"));
-        dataList.add(new CardList("[Soup]", "Korean Kimchi"));
-        dataList.add(new CardList("[Soup]", "Korean Kimchi"));
-        dataList.add(new CardList("[Soup]", "Korean Kimchi"));
-        dataList.add(new CardList("[Soup]", "Korean Kimchi"));
-        dataList.add(new CardList("[Soup]", "Korean Kimchi"));
-        dataList.add(new CardList("[Soup]", "Korean Kimchi"));
+        dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb1));
+        dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb2));
+        dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb3));
+        dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb1));
+        dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb2));
+        dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb3));
+        dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb1));
 //        for (int i = 0; i < 10; i++){
 //            dataList.add(new CardList("soup", "kimchisoup"));
 //        }

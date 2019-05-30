@@ -21,13 +21,13 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         List<CardList> dataList =  new ArrayList<>();
-        dataList.add(new CardList("[Soup]", "Korean Kimchi"));
-        dataList.add(new CardList("[Soup]", "Korean Kimchi"));
-        dataList.add(new CardList("[Soup]", "Korean Kimchi"));
-        dataList.add(new CardList("[Soup]", "Korean Kimchi"));
-        dataList.add(new CardList("[Soup]", "Korean Kimchi"));
-        dataList.add(new CardList("[Soup]", "Korean Kimchi"));
-        dataList.add(new CardList("[Soup]", "Korean Kimchi"));
+        dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb1));
+        dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb2));
+        dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb3));
+        dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb1));
+        dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb2));
+        dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb3));
+        dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb1));
 
         RecyclerViewListAdapter adapter = new RecyclerViewListAdapter(dataList);
         recyclerView.setAdapter(adapter);

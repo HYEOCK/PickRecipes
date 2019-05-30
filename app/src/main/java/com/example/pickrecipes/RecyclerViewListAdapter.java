@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -29,22 +30,25 @@ public class RecyclerViewListAdapter extends RecyclerView.Adapter<RecyclerViewLi
         CardList list = mDataList.get(i);
         viewHolder.title.setText(list.getTitle());
         viewHolder.contests.setText(list.getContents());
+        viewHolder.listThumbnail.setImageResource(list.getListThumbnail());
 
     }
 
     @Override
     public int getItemCount() {
-        return mDataList.size(); // 어댑터의 리스트 갯수
-    }
+        return mDataList.size();
+    } // 어댑터의 리스트 갯수
 
     public static class ViewHolder extends  RecyclerView.ViewHolder{
         TextView title;
         TextView contests;
+        ImageView listThumbnail;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.title_text);
             contests = itemView.findViewById(R.id.content_text);
+            listThumbnail = itemView.findViewById(R.id.listImg);
         }
     }
 }
