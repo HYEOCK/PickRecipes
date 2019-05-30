@@ -10,8 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Top_Meun"
+            android:label="@string/title_activity_top__meun"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".ui.login.Login_google"
-            android:label="@string/title_activity_login_google"></activity>
+            android:label="@string/title_activity_login_google" />
         <activity android:name=".MyPage" />
         <activity android:name=".contents" />
         <activity android:name=".KfoodList" />

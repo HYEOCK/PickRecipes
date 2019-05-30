@@ -22,7 +22,7 @@ import com.example.pickrecipes.R;
 import com.example.pickrecipes.ui.login.LoginViewModel;
 import com.example.pickrecipes.ui.login.LoginViewModelFactory;
 
-public class LoginActivity extends AppCompatActivity {
+public class Login_google extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
 
