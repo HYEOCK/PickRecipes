@@ -7,9 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Contents extends AppCompatActivity {
     private TextView tvTitle, tvdescription;
     private ImageView img;

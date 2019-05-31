@@ -11,12 +11,6 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".MyPage"></activity>
-
-        <activity
-            android:name=".ui.login.Login_google"
-            android:label="@string/title_activity_login_google" />
-
-
         <activity android:name=".KfoodList" />
         <activity android:name=".MainActivity">
 

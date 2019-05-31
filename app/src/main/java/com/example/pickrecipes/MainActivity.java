@@ -46,9 +46,14 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
     public void taiwanFood(View view) {
+        Intent intent1 = new Intent(this, TfoodList.class);
+        startActivity(intent1);
     }
 
     public void koreanFood(View view) {
+        Intent intent2 = new Intent(this, KfoodList.class);
+        startActivity(intent2);
     }
 }
