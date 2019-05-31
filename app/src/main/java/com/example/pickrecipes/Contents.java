@@ -1,28 +1,34 @@
 package com.example.pickrecipes;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-
-import java.util.ArrayList;
-import java.util.List;
-
-public class MainActivity extends AppCompatActivity {
+public class Contents extends AppCompatActivity {
+    private TextView tvTitle, tvdescription;
+    private ImageView img;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_contents);
 
+        tvTitle  = (TextView) findViewById(R.id.cTitle);
+        tvdescription = (TextView) findViewById(R.id.cDescription);
+        img = (ImageView) findViewById(R.id.kFoodTopImg);
+
+        Intent intent = getIntent();
+        String Title = intent.getExtras().getString("Title");
+        int image = intent.getExtras().getInt("ListThumbnail");
+
+        tvTitle.setText(Title);
+        img.setImageResource(image);
     }
 
     @Override

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KfoodList">
+    tools:context=".contents">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -26,62 +26,45 @@
         android:layout_height="wrap_content"
         android:text="Home > Korean food"
         android:layout_marginStart="23dp"
-        android:layout_marginTop="95dp"/>
+        android:layout_marginTop="85dp"/>
 
-    <ScrollView
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="130dp">
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:layout_gravity="center">
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/content_img"
-            />
+            <ImageView
+                android:id="@+id/kFoodTopImg"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#2d2d2d"
+                android:scaleType="center" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/cTitle"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:gravity="left"
-            android:text="dfhskjdhsldkslkdjflsjdflkdsjf"
+            android:text="Content Title"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:layout_marginStart="23dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:text="dkshkfhksdf"
-            android:layout_marginStart="23dp"
             android:layout_marginTop="20dp"/>
 
-        <ImageView
-            android:id="@+id/imageView4"
+        <TextView
+            android:id="@+id/cDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/recipes_img"
-            android:layout_marginTop="20dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="dkshkfhksdf"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="20dp"/>
+            android:text="@string/description"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
 
         </LinearLayout>
-    </ScrollView>
+    </android.support.v4.widget.NestedScrollView>
 </RelativeLayout>
