@@ -1,17 +1,15 @@
 package com.example.pickrecipes;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class KfoodList extends AppCompatActivity {
-
-    List<CardList> cardLists;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,18 +22,16 @@ public class KfoodList extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         List<CardList> dataList =  new ArrayList<>();
-        dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb1));
+        dataList.add(new CardList("[Rice]", "Bibimbap", R.drawable.kfood_thumb1));
         dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb2));
         dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb3));
         dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb1));
         dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb2));
         dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb3));
         dataList.add(new CardList("[Soup]", "Korean Kimchi", R.drawable.kfood_thumb1));
-//        for (int i = 0; i < 10; i++){
-//            dataList.add(new CardList("soup", "kimchisoup"));
-//        }
 
-        RecyclerViewListAdapter adapter = new RecyclerViewListAdapter(dataList);
+
+        RecyclerViewListAdapter adapter = new RecyclerViewListAdapter(dataList, this);
         recyclerView.setAdapter(adapter);
     }
 }
