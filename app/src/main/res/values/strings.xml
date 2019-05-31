@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">PickRecipes</string>
-<<<<<<< HEAD
+
     <string name="description">1. Pour rice and water into a pot, boil it for another 4 minutes, lower it to medium heat, boil it for 3 minutes, lower it to low heat when rice grains spread, and let it soak for 10 minutes.
 2. Heat a pan with cooking oil and stir-fry zucchini over high heat for 30 seconds to cool (80g).
 
@@ -14,7 +14,7 @@
 
 7. Put the rice in a bowl and put the ingredients and the sauce on top.
 Bibimbap (Korean food recipe)</string>
-=======
+
     <string name="title_activity_login_google">Sign in</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -38,5 +38,5 @@ Bibimbap (Korean food recipe)</string>
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
->>>>>>> Topchange-2
+
 </resources>
