@@ -13,10 +13,6 @@
         <activity android:name=".MyPage"></activity>
 
         <activity
-            android:name=".Top_Meun"
-            android:label="@string/title_activity_top__meun"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
             android:name=".ui.login.Login_google"
             android:label="@string/title_activity_login_google" />
 
